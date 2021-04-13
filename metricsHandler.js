@@ -20,7 +20,7 @@ const {
     rpcuser = 'user',    //rpcuser to user
     rpcpassword = 'pass',    //rpcpassword to pass
     rpchost = '127.0.0.1',  
-    rpcport = '8486',   //8486
+    rpcport = '8486',   //8332 to 8486
     rpcscheme = 'http',
 } = process.env;
 
