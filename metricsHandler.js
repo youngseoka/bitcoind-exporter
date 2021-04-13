@@ -12,7 +12,8 @@ const {
     keyPoolSizeMetric,
     unlockedUntilMetric,
     transactionFeeMetric,
-    addressBalanceMetric
+    addressBalanceMetric,
+    getnetworkhashpsMetric
 } = require('./metrics');
 
 const {
@@ -83,12 +84,15 @@ const metricsHandler = (req, res) => {
     const difficultyPromise = call('getdifficulty')
         .then(difficulty => difficultyMetric.set(difficulty))
     ;
+    const networkhashpsPromise = call('getnetworkhashps')
+        .then(networkhashps => getnetworkhashpsMetric.set(networkhashps))
 
     Promise.all([
         listUnspentPromise,
         walletInfoPromise,
         bestBlockPromise,
         difficultyPromise
+        networkhashpsPromise
     ])
         .then(() => res.end(register.metrics()))
         .catch((error) => {
