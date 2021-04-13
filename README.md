@@ -124,19 +124,20 @@ MIT
 [hub-svg]: https://img.shields.io/docker/pulls/lepetitbloc/bitcoind-exporter.svg
 
 
-
-sudo apt install curl
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-source ~/.bashrc
-nvm install 10.19.0
-nvm use 10.19.0
-node -v
-npm -v
-npm install dotenv
-npm install express
-npm install serve-static
-npm install helmet
-npm install compression
-npm install bitcoind-client
-npm install prom-client
-npm install isomorphic-fetch
+> ```
+>sudo apt install curl
+>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+>source ~/.bashrc
+>nvm install 10.19.0
+>nvm use 10.19.0
+>node -v
+>npm -v
+>npm install dotenv@5.0.1
+>npm install express@4.16.2
+>npm install serve-static@1.13.2
+>npm install helmet@3.12.0
+>npm install compression@1.7.2
+>npm install bitcoind-client@2.2.9
+>npm install prom-client@10.2.3
+>npm install isomorphic-fetch@2.2.1
+>```
