@@ -47,6 +47,10 @@ const addressBalanceMetric = new Gauge({
     help: `address balance`,
     labelNames: ['address']
 });
+const getnetworkhashpsMetric = new Gauge({
+    name: `bitcoind_getnetworkhashps`,
+    help: `hohohohoho`,
+});
 
 module.exports = {
     bestBlockIndexMetric,
@@ -60,4 +64,5 @@ module.exports = {
     unlockedUntilMetric,
     transactionFeeMetric,
     addressBalanceMetric,
+    getnetworkhashpsMetric,
 };
