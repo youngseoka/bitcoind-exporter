@@ -16,11 +16,11 @@ const {
 } = require('./metrics');
 
 const {
-    ticker = 'BTC',
-    rpcuser = 'rpcuser',
-    rpcpassword = 'rpcpassword',
-    rpchost = '127.0.0.1',
-    rpcport = '8332',
+    ticker = 'YSC', //BTC to YSC
+    rpcuser = 'user',    //rpcuser to user
+    rpcpassword = 'pass',    //rpcpassword to pass
+    rpchost = '127.0.0.1',  
+    rpcport = '8486',   //8486
     rpcscheme = 'http',
 } = process.env;
 
